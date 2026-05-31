@@ -1,0 +1,20 @@
+body{
+  background-color: #45dec9;
+  font-family: Arial, sans-serif;
+}
+
+h1{
+  color: rgb(12, 11, 11);
+  text-align: center;
+}
+
+.student-card{
+  background-color: #c791ee;
+  color: black;
+  width: 250px;
+  padding: 20px;
+  margin: 20px auto;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0px 0px 10px rgb(208, 204, 204);
+}
