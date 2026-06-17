@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Attendance Pro</title>
+<link rel="stylesheet" href="index.css">
+<script src="script.jsx"></script>
+</head>
+<body>
+
+<nav>
+    <div class="logo">Attendance Pro</div>
+
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Students</a></li>
+        <li><a href="#">Attendance</a></li>
+        <li><a href="#">Reports</a></li>
+    </ul>
+
+    <button class="nav-btn">Admin Login</button>
+</nav>
+
+<section class="hero">
+    <h1>Student Attendance Management System</h1>
+    <p>Track and manage attendance efficiently</p>
+</section>
+
+<div class="date-box">
+    <h2 id="currentDate"></h2>
+</div>
+
+<div class="container">
+
+    <h2>Mark Attendance</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Roll No</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Shivam</td>
+                <td>10</td>
+                <td>
+                    <button class="present"
+                    onclick="markAttendance('present')">
+                    Present
+                    </button>
+
+                    <button class="absent"
+                    onclick="markAttendance('absent')">
+                    Absent
+                    </button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="result">
+        <h3>Current Attendance</h3>
+        <p id="percentage">0%</p>
+    </div>
+
+    <div class="predictor">
+
+        <h2>Attendance Predictor</h2>
+
+        <input
+        type="number"
+        id="futureDays"
+        placeholder="Enter Future Classes">
+
+        <br>
+
+        <button onclick="predictPresent()">
+            If All Present
+        </button>
+
+        <button onclick="predictAbsent()">
+            If All Absent
+        </button>
+
+        <h3 id="predictionResult"></h3>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
